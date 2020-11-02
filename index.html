@@ -1,0 +1,373 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+
+<head>
+    <!--Esto no se ve -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TodoCine HTML5</title>
+    <link rel="icon" href="./img/logotipo.ico" type="image/ico"/>
+    <link rel="stylesheet" type="text/css" href="./css/estilos.css" media="screen" />
+</head>
+
+<body>
+    <div id="contenedor">
+
+        <header>
+            <img src="./img/96b54ccc543cd75f7c4239109c91c4ad.jpg" width="100%" height="100%"> </img>
+            <a href="./index.html" target="_self"><img class="logo" src="./img/logotipo.png" width="40%" height="130%"> </img></a>
+
+            <div class="registro" align="center">
+                <form>
+                    <input type="text" name="nick" placeholder="Usuario">
+                    <p><input type="password" name="contraseña" placeholder="Password"></p>
+                    <p>
+                        <button>Conectar</button>
+                        <button>Registro</button>
+                    </p>
+                </form>
+            </div>
+            <div class="busqueda">
+                <form>
+                    <input type="search" name="busq" placeholder="Buscar en la web">
+                    <button>Buscar</button>
+                </form>
+            </div>
+        </header>
+
+        <nav>
+            <ul class="listnav">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="#">Cine Clásico</a>
+                    <ul>
+                        <li><a href="#">Hollywood</a></li>
+                        <li><a href="#">Europeo</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Cine Actual</a>
+                    <ul>
+                        <li><a href="#">Hollywood</a></li>
+                        <li><a href="#">Europeo</a></li>
+                    </ul>
+                </li>
+                <li><a href="./series.html">Series</a>
+                    <ul>
+                        <li><a href="#">C. Ficcion</a></li>
+                        <li><a href="#">Comedia</a></li>
+                        <li><a href="#">Drama</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Anime</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <article>
+                <h2> Las 3 mejores peliculas de 2019</h2>
+                <ol class="mejoresPelislist" type="I">
+                    <li>
+                        <h3> Parásitos</h3>
+                        <figure align = "center">
+                            <img src="./img/parasitos-pelicula-1559747669.jpg" width="60%">
+                            <figcaption> Warner </figcaption>
+                        </figure>
+
+                        <b>Fecha de estreno: 18 de octubre.</b>
+                        <p>
+                            La flamante ganadora de la Palma de Oro del Festival de Cannes es, efectivamente, la mejor
+                            película del año. No en vano viene firmada por el surcoreano Bong Joon-ho, autor de
+                            películas como Snowpiercer o Okja, con las que esta Parásitos comparte una mirada a la lucha
+                            de clases y la desigualdad social. Una familia rica y una familia pobre irán uniendo sus
+                            lazos de la forma más delirante posible hasta que los secretos estallen por los aires y todo
+                            lo que nos
+                            quede sea la certeza de que este es uno de los cineastas más lúcidos (y reivindicativos) de
+                            nuestro tiempo.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Érase una vez en Hollywood</h3>
+                        <figure align = "center">
+                            <img src="./img/mejores-peliculas-2019-once-upon-a-time-in-hollywood-1544698183.jpg"
+                                width="60%">
+                                <figcaption>Sony</figcaption>
+                        </figure>
+
+                        <b>Fecha de estreno: 9 de agosto.</b>
+                        <p>
+                            Retrato de una época de cambios en la sociedad estadounidense, y de una amistad masculina
+                            algo estreñida (la de Leonardo DiCaprio y Brad Pitt) que aun así mueve montañas, Érase una
+                            vez en Hollywood es una indiscutible obra maestra.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Joker</h3>
+                        <figure align = "center">
+                            <img src="./img/mejores-peliculas-2019-joker-1544698178.jpg" width="60%">
+                            <figcaption>Paramount</figcaption>
+                        </figure>
+
+                        <b>Fecha de estreno: 4 de octubre.</b>
+                        <p>
+                            Lo de Joaquin Phoenix no es ni medio normal. Y lo que hace en esta película, una de las
+                            mejores del año, es una salvajada. La película sobre los orígenes del villano más célebre de
+                            Batman brilla con luz propia como retrato de un tiempo de descontento social donde estamos
+                            dispuestos a lanzarnos al caos con tal de cambiar un poco las tornas. La lucha de clases, la
+                            falta de ayuda de los más vulnerables y la burla al diferente aparecen en este filme para
+                            enfrentar a
+                            su protagonista con el caos.
+                        </p>
+                    </li>
+                </ol>
+            </article>
+
+            <p><hr></hr></p>
+
+            <article>
+                <h2>Datos interesantes:</h2>
+                <table class="taquilleras" border="1">
+                    <caption>
+                        <p><b>Peliculas mas taquilleras teniendo en cuenta la inflación</b></p>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Nº</th>
+                            <th>Titulo</th>
+                            <th>Distribuidora</th>
+                            <th>Recaudación Mundial</th>
+                            <th>Año</th>
+                            <th>Director</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="posicion">1</td>
+                            <td class="pelicula">Lo que el viento se llevó</td>
+                            <td>MGM</td>
+                            <td>$3 728 000 000</td>
+                            <td>1939</td>
+                            <td>Victor Fleming</td>
+                        </tr>
+                        <tr>
+                            <td class="posicion">2</td>
+                            <td class="pelicula">Avatar</td>
+                            <td rowspan="2">20th Century Fox</td>
+                            <td>$3 273 000 000</td>
+                            <td>2009</td>
+                            <td>James Cameron</td>
+                        </tr>
+                        <tr>
+                            <td class="posicion">3</td>
+                            <td class="pelicula">Star Wars</td>
+                            <td>$3 061 000 000</td>
+                            <td>1977</td>
+                            <td>George Lucas</td>
+                        </tr>
+                        <tr>
+                            <td class="posicion">4</td>
+                            <td class="pelicula">Avengers: Endgame</td>
+                            <td>Disney</td>
+                            <td>$2 796 000 000</td>
+                            <td>2019</td>
+                            <td>Anthony y Joe Russo</td>
+                        </tr>
+                        <tr>
+                            <td class="posicion">5</td>
+                            <td class="pelicula">Titanic</td>
+                            <td rowspan="2">20th Century Fox</td>
+                            <td>$2 727 000 000</td>
+                            <td>1997</td>
+                            <td>James Cameron</td>
+                        </tr>
+                        <tr>
+                            <td class="posicion">6</td>
+                            <td class="pelicula">The Sound of Music</td>
+                            <td>$2 564 000 000</td>
+                            <td>1965</td>
+                            <td>Robert Wise</td>
+                        </tr>
+                        <tr>
+                            <td class="posicion">7</td>
+                            <td class="pelicula">E.T., el extraterrestre</td>
+                            <td>Universal Pictures</td>
+                            <td>$2 503 000 000</td>
+                            <td>1982</td>
+                            <td>Steven Spielberg</td>
+                        </tr>
+                        <tr>
+                            <td class="posicion">8</td>
+                            <td class="pelicula">Los diez mandamientos</td>
+                            <td>Paramount Pictures</td>
+                            <td>$2 370 000 000</td>
+                            <td>1956</td>
+                            <td>Cecil B. DeMille</td>
+                        </tr>
+                        <tr>
+                            <td class="posicion">9</td>
+                            <td class="pelicula">Doctor Zhivago</td>
+                            <td>MGM</td>
+                            <td>$2 246 000 000</td>
+                            <td>1965</td>
+                            <td>David Lean</td>
+                        </tr>
+                        <tr>
+                            <td class="posicion">10</td>
+                            <td class="pelicula">Star Wars: Episodio VII</td>
+                            <td>Disney</td>
+                            <td>$2 215 000 000</td>
+                            <td>2015</td>
+                            <td>J. J. Abrams</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <p><hr></hr></p>
+
+            <article>
+                <h2>Comprobemos cuanto sabes de cine:</h2>
+                <form class="formulario" method="post">
+                    <b>1. ¿Cómo se llama la primera película del Señor de los Anillos?</b>
+                    <ul>
+                        <li type="disc"><input type="radio" name="pregunta1-1" value="torres"> Las Dos Torres</input>
+                        </li>
+                        <li type="disc"><input type="radio" name="pregunta1-2" value="comunidad "> La Comunidad del
+                            Anillo</input>
+                        </li>
+                        <li type="disc"> <input type="radio" name="pregunta1-3" value="retorno"> El Retorno del
+                            Rey</input>
+                        </li>
+                        <li type="disc"> <input type="radio" name="pregunta1-4" value="hobbit"> El Hobbit</input></li>
+                    </ul>
+                    <b>2. Son Personajes de Star Wars:</b>
+                    <ul>
+                        <li type="disc"><input type="checkbox" name="pregunta2-1" value="c3po"> C3PO </input></li>
+                        <li type="disc"><input type="checkbox" name="pregunta2-2" value="bb9"> BB9 </input></li>
+                        <li type="disc"><input type="checkbox" name="pregunta2-3" value="solo"> Han Solo </input></li>
+                        <li type="disc"><input type="checkbox" name="pregunta2-4" value="amigdala"> Padme Amigdala
+                            </input>
+                        </li>
+                    </ul>
+
+                    <b>3. El personaje que le firma el libro a Harrison Ford en la tercera parte de Indiana Jones es</b>
+                    <select name="pregunta3">
+                        <optgroup label="Opciones">
+                            <option value="connery">Sean Connery</option>
+                            <option value="pitt">Brad Pitt</option>
+                            <option value="hitler">Hitler</option>
+                        </optgroup>
+                    </select>
+                    <p />
+                    <b>4. El primer dinosaurio vivo que ven los protagonistas de Parque Jusasico es un:</b>
+                    <ul>
+                        <li><input type="radio" name="pregunta4-1" value="velociraptor"> Velociraptor</input></li>
+                        <li><input type="radio" name="pregunta4-2" value="trex"> T-Rex</input></li>
+                        <li><input type="radio" name="pregunta4-3" value="brachio"> Brachiosaurio</input></li>
+                        <li><input type="radio" name="pregunta4-4" value="trice"> Triceratops</input></li>
+                    </ul>
+                    <b>5. Escribe el nombre de dos actores o actrices protagonistas de la pelicula "7 Apellidos
+                        Vascos":</b>
+                    <p>
+                        <fieldset class="actores" align="center">
+                            <p>
+                                <label for="actor1">Actor 1:</label>
+                                <input type="text" name="actor1" required />
+                            </p>
+                            <p>
+                                <label for="actor2">Actor 2:</label>
+                                <input type="text" name="actor2" required />
+                            </p>
+                        </fieldset>
+                    </p>
+                    <b>6. Que protagonista de "Lo que el viento se llevó" dice la mítica frase: "¡A Dios pongo por
+                        testigo,
+                        que no volveré a pasar hambre!":</b>
+                    <p>
+                        <input type="radio" name="pregunta6" value="butler"> Rhett Butler</input>
+                        <input type="radio" name="pregunta6" value="ohara"> Scarlett O'Hara</input>
+                    </p>
+
+                    <p><input type="submit" />
+                        <input type="reset" />
+                    </p>
+                    <h3 align="center"><b><u>PUNTUACIÓN: </u></b></h3>
+                </form>
+            </article>
+        </section>
+
+        <aside>
+            </p>
+            <div align="center">
+                <a href="https://castillodepeniscola.dipcas.es/es/teatro-clasico.html" target="_self">
+                    <img src="./gif/Teatro-256x256.gif" width="80%"></img>
+                </a>
+                <p><a href="https://www.dominospizza.es/" target="_self">
+                        <img src="./gif/dominos.gif" width="80%"></img>
+                    </a>
+                </p>
+
+                <h5>Próximamente en cines:</h5>
+
+                <iframe width="85%" src="https://www.youtube.com/embed/Izme__ZsURY" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+
+                <p><a href="http://www.jurassicworld.es/" target="_blank">
+                        <img src="./img/jurassic-world-3.jpg" width="80%"></img>
+                    </a></p>
+            </div>
+
+            <div class="coment">
+                <form>
+                    <input type="text" name="nick" placeholder="Nombre" />
+                    <p><textarea name="comentarios" rows="10" cols="30"
+                            placeholder="Déjanos tus comentarios"></textarea>
+                    </p>
+                    <button>Enviar</button>
+                </form>
+            </div>
+
+        </aside>
+
+        <footer>
+            <div align="center">
+                <a href="https://www.foxtv.es/" target="_blank">
+                    <img src="./gif/Walking Dead.gif" width="40%" height="170px"></img>
+                </a>
+            </div>
+            <div class="rs">
+                <p>Síguenos en:</p>
+                <table>
+                    <tr>
+                        <th><a href="https://www.facebook.com" target="_blank">
+                                <img src="./img/facebook.jpg" height="20%"></img>
+                            </a>
+                        </th>
+                        <th><a href="https://www.instagram.com" target="_blank">
+                                <img src="./img/instagram.jpg" height="20%"></img>
+                            </a>
+                        </th>
+                        <th>
+                            <img src="./img/wathsapp.jpg" height="20%"></img>
+                        </th>
+                        <th><a href="https://www.twitter.com" target="_blank">
+                                <img src="./img/twitter.jpg" height="20%"></img>
+                            </a>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+            <div class="info">
+                <p><b>CONTACTO:</b></p>
+                <p>Correo: <a href="mailto:djam4885@gmail.com"> djam4885@gmail.com </a></p>
+                <p>Direccion: c/La Previsión,24 Cordoba 14004</p>
+                <p>Copyright IESTrassierra © 2019</p>
+                <p>Designed by DJARMO</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
